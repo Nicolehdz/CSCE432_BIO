@@ -48,3 +48,30 @@ window.onload = function(){
     }
 };
 
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Stop default form submission
+
+        let form = event.target;
+        let formData = new FormData(form);
+
+        fetch("https://formspree.io/f/meoezegr", {
+            method: "POST",
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            if (response.ok) {
+                document.getElementById("thank-you-message").style.display = "block"; // Show thank you message
+                form.reset(); // Clear form fields
+            } else {
+                alert("There was a problem submitting the form. Please try again.");
+            }
+        }).catch(error => {
+            alert("There was an error. Please try again later.");
+        });
+    });
+});
+
