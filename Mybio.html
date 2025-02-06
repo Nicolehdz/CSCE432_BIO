@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicole's Accessible Web Page Bio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img id="logo" src="logo_hdz.png" alt="Nicole Hernandez's personal logo">
+    <h1>Nicole Hernandez</h1>
+    <p>First-generation Latina student passionate about accessibility and technology.</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="qualifications.html">Qualifications</a>
+    <a href="services.html">Services</a>
+    <a href="AI.html">AI</a>
+    <button onclick="toggleStyleSheet()" type="button">Day/Night Toggle</button>
+</nav>
+
+<main>
+    <section class="square-layout">
+        <div class="images-container">
+            <img src="profile.jpg" alt="Nicole Hernandez smiling" class="left-image">
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/nicolehdz/" target="_blank">
+                    <img src="linkedIn_logoo.png" alt="LinkedIn Logo" class="below-image">
+                </a>
+                <a href="https://github.com/Nicolehdz" target="_blank">
+                    <img src="github.png" alt="GitHub Logo" class="below-image">
+                </a>
+            </div>
+        </div>
+        <div class="content-main">
+            <h2>About Me</h2>
+            <p>I am a Computer Engineering student at Texas A&M University with a strong interest in accessibility and inclusive technology. I am eager to build innovative solutions that make digital experiences more inclusive.</p>
+        </div>
+    </section>
+
+    <section id="section1-goals" class="flex-container">
+        <div class="content1">
+            <h2>Goals</h2>
+            <p> In the dynamic tech world, staying on top of things is key. I'm all about continuous learning, not to be ahead of the game, but to stay in the loop with the latest in computer engineering.</p>
+        </div>
+        <div class="image-and-button-container">
+            <img src="conf_pic.jpg" alt="Conference Picture" class="section1-image">
+            <a href="https://rewritingthecode.org/" class="button">Click Here</a>
+        </div>
+    </section>
+
+    <section id="section1-goals">
+        <img src="eng.jpg" alt="Engineering passion image" class="section2-image">
+        <div class="content2">
+            <h2>Why Engineering?</h2>
+            <p>Taking on a personal project to improve electronic health records (EHRs) interoperability, I dove into research and teamed up with a medical professional to grasp industry challenges.</p>
+            <a href="https://docs.google.com/document/d/e/2PACX-1vT53xSBgJb9JsadegeYN7xaerWecQdW7ftdALRhc1yf__S5zw5sskCCOmg7sx4U1S8DbLlk1I1GjjV6/pub" class="button">Click Here</a>
+        </div>
+    </section>
+
+    <section id="section1-goals">
+        <img src="Dance.jpg" alt="Dance hobby image" class="section3-image">
+        <div class="content2">
+            <h2>Hobbies</h2>
+            <p> I enjoy dancing—it’s my go-to for letting loose and having a great time. I also love fashion as a creative outlet for self-expression.</p>
+            <a href="https://youtu.be/37ctRWjjBNc?si=DcFqeZe0XwsuynFx" class="button">Click Here</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="mailto:your-email@tamu.edu" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Nicole Hernandez | <a href="#">Back to Top</a></p>
+</footer>
+
+<script src="functions.js"></script>
+</body>
+</html>
