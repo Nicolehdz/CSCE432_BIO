@@ -1,4 +1,3 @@
-/* Updated styles.css */
 body {
     font-family: Mako;
     margin: 0;
@@ -11,18 +10,18 @@ header {
     padding: 10px;
     text-align: center;
     display: flex;
-    align-items: center;
+    align-items: center; /* Align items vertically in the center */
 }
 
 #logo {
-    width: 85px;
-    margin-right: 50px;
+    width: 85px; /* Adjust the width as needed */
+    margin-right: 50px; /* Adds space between logo and text */
 }
 
 nav {
     display: flex;
     justify-content: space-around;
-    background-color: #444;
+    background-color: #dbbfaf;
     padding: 10px;
 }
 
@@ -38,29 +37,304 @@ nav a:hover {
     background-color: #EFE5DC;
 }
 
+/* about me section of home layout*/
 .square-layout {
-    text-align: right;
+    /* padding: 80px; */
+    text-align: right; 
     background-color: #F3D8C7;
+    padding: 30px;
+    text-align: center;
+    display: flex; /* Add flex display to align items horizontally */
+    align-items: center; /* Center items vertically in the flex container */
+}
+
+.images-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.images-container a:hover img {
+    transform: scale(1.3); /* Increase the size on hover */
+    transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #77696A; /* Green color, you can change this */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+
+
+.left-image {
+    max-width: 250px; /* Adjust the max-width as needed */
+    margin-right: 50px; /* Add margin to separate the image from text */
+}
+
+.below-image {
+    max-width: 13%; /* Ensure the image doesn't exceed the width of its container */
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.social-icons img {
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.content-main {
+    flex-grow: 1;
+    margin-left: 20px; /* Adjust the margin as needed */
+}
+
+.content-qual {
+    max-width: 250px; /* Adjust the max-width as needed */
+    margin-right: 80px; /* Add margin to separate the image from text */
+}
+
+p {
+    font-size: 18px; /* Adjust the font size as needed */
+}
+
+section {
+    padding: 25px;
+    text-align: right; /* Align text to the left for all sections */
+}
+
+
+/* Goals Section of home page*/
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Add space between content and image */
+    align-items: center;
+}
+
+.section1-image {
+    max-width: 270px; /* Adjust the max-width as needed */
+    padding: 50px;
+    background-color: #EFE5DC;
+}
+
+.section2-image {
+    max-width: 200px; /* Adjust the max-width as needed */
+    margin-right: 40px; /* Add margin to separate the image from text */
+    background-color: #EFE5DC;
+    padding: 45px;
+}
+
+.section3-image {
+    max-width: 270px; /* Adjust the max-width as needed */
+    background-color: #EFE5DC;
+    padding: 45px;
+}
+
+#section1-goals {
+    display: flex;
+    align-items: center; /* Center items vertically in the flex container */
+}
+
+#section1-proj {
+    display: flex;
+    align-items: center; /* Center items vertically in the flex container */
+}
+
+/* index content (home) */
+.content1 {
+    padding: 40px;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.content2 {
+    padding: 25px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* portfolio content */
+.content3 {
+    padding: 25px;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.content5 {
+    padding: 25px;
+    text-align: left;
+    flex-grow: 1;
+}
+
+
+ /* .pdf-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto; 
+    height: 80vh;
+}
+
+
+.pdf-link {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; 
+}
+
+.pdf-viewer {
+    width: 100%; 
+    height: 100%; 
+    max-width: 800px; 
+    max-height: 80vh; 
+    border: none;
+}
+
+
+.download-button {
+    margin-top: 10px; 
+}
+
+.download-button a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #555;
+    color: #547c54;
+    text-decoration: red;
+    border-radius: 10px;
+    transition: background-color 0.10s;
+}
+
+.download-button a:hover {
+    background-color: #777;
+}
+ */
+
+ /* Qualification content */
+ .pdf-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    height: 80vh;
+    padding: 20px; /* Add padding to center the content and provide spacing */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.pdf-viewer {
+    width: 100%;
+    max-width: 800px;
+    max-height: 80vh;
+    border: none;
+}
+
+#section1-resume {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc; /* Optional: Add a border around the section */
+}
+
+#section1-link {
+    text-align: center;
+    padding: 20px;
+    background-color: #EFE5DC;
+}
+
+.pdf-link {
+    text-align: center;
+    padding: 20px;
+    background-color: #EFE5DC;
+    color: #000000; /* Set the text color */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.download-button {
+    margin-top: 10px;
+    text-align: center; /* Center the button within the container */
+    background-color: #5d5555;
+    border-radius: 5px;
+    padding: 8px 16px;
+    text-decoration: none; /* Corrected the 'red' value to 'none' */
+    color: #EFE5DC;
+    display: inline-block;
+}
+
+.download-button a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #5d5555;
+    color: #547c54;
+    text-decoration: none; /* Corrected the 'red' value to 'none' */
+    border-radius: 10px;
+    transition: background-color 0.10s;
+}
+
+.download-button a:hover {
+    background-color: #777;
+}
+
+.content6 {
+    padding: 25px;
+    text-align: left;
+    flex-grow: 1;
+
+}
+
+.content7 {
+    padding: 25px;
+    text-align: left;
+    flex-grow: 1;
+}
+
+#section1-serv {
+    display: flex;
+    align-items: center; /* Center items vertically in the flex container */
+}
+
+#section2-serv {
+    display: flex;
+    align-items: center; /* Center items vertically in the flex container */
+}
+
+.section4-image {
+    max-width: 270px; /* Adjust the max-width as needed */
+    background-color: #EFE5DC;
+    padding: 45px;
+}
+
+.section5-image {
+    max-width: 200px; /* Adjust the max-width as needed */
+    margin-right: 50px; /* Add margin to separate the image from text */
+    background-color: #EFE5DC;
+    padding: 45px;
+}
+
+
+/* AI Page Styles */
+#section1-ai {
+    background-color: #FBFEFB;
     padding: 30px;
     text-align: center;
     display: flex;
     align-items: center;
 }
 
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #77696A;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
+.section3-image {
+    max-width: 270px; /* Adjust the max-width as needed */
+}
+
+.content4 {
+    padding: 25px;
+    text-align: left;
+    flex-grow: 1;
 }
 
 /* Contact Me Section Styling */
 #contact {
     background-color: #EFE5DC;
-    padding: 30px;
+    padding: 15px;
     text-align: center;
     border-radius: 10px;
     margin: 20px;
@@ -69,6 +343,7 @@ nav a:hover {
 
 #contact h2 {
     color: #444;
+
 }
 
 form {
@@ -105,8 +380,8 @@ footer {
     background-color: #444;
     color: #FBFEFB;
     text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 2px;
+    margin-top: 40px;
 }
 
 footer a {
